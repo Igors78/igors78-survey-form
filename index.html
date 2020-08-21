@@ -9,36 +9,27 @@
 </head>
 
 <body>
-  <div id="container">
-    <h1 id="title"
-        class="text-center">
+<div class="container" id="container">
+    <div class="title">
+      <h1 id="title" class="text-center">
       Company's survey form
-    </h1>  
-    <p id="description"
-      class="text-center">
-      <em>Please take part in our good Company's employee survey</em>
-        
+      </h1>  
+      <p id="description" class="text-center">
+      Please take part in our good Company's employee survey
       </p>
+    </div>
     <form id="survey-form">
       <div class="form-group">
-        <label id="name-label"
-              for="name"><strong>Name</strong><br>
-              
-              </label>
-        <input type="text"
-              placeholder="Enter your name"
-              required
-              id="name"
-              name="name"
-              class="form-control"
-              />
+        <label id="name-label" for="name"><strong>Name</strong><br></label>
+        <input type="text" placeholder="Enter your name" required id="name" name="name"
+              class="form-control inputtext"/>
       </div>
       <div class="form-group">
         <label id="email-label" for="email">
           <strong>E-mail</strong><br></label>
         <input type="email"
               id="email"
-              class="form-control"
+              class="form-control inputtext"
               name="email"
               placeholder="Enter your e-mail"
               required/>
@@ -48,7 +39,7 @@
     <strong>Your Age</strong><br></label>
   <input type="number"
           id="number"
-          class="form-control"
+          class="form-control inputtext"
           name="age"
           min="18"
           max="99"
@@ -62,7 +53,7 @@
           <input type="number"
                 id="stage"
                 name="stage"
-                class="form-control"
+                class="form-control inputtext"
                 min="1"
                 max="50"
                 placeholder="Years within Company"
@@ -159,8 +150,8 @@
                   value="submit"
                   class="submit-button">Submit</button>
         </div>
-        </form>
-      </div>
+  </form>
+</div>
       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>

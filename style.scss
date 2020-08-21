@@ -1,24 +1,41 @@
-:root {
-  background-color: #d5e1df;
+body {
+background: url('kilwater.jpg') fixed 100% no-repeat;
+line-height: 30px;
+background-size: cover;
+font-size: 20px;
 }
-.text-center {
+
+.title {
   text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px rgb(54, 53, 53);
+  line-height: 45px;
+  color: rgb(25, 86, 199);
 }
-body { font-family: Helvetica, Geneva, Times, serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  
+#description {
+  color: black;
+  text-shadow: none;
 }
-input,
-button,
-select,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+p {
+  font-size: 25px;
+}
+.inputtext {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 50%;
+  height: 40px;
+  background: rgba(228, 122, 122, 0.24);
+  margin: 0 auto;
 }
 .container {
-  width: 100%;
-  margin: 3rem auto 0 auto;
+  background: rgba(233, 221, 154, 0.815);
+
+  display: flexbox;
+  justify-content: center;
+  width: 60%;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 10px;
+  
 }
