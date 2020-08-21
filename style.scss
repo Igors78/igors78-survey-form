@@ -1,0 +1,24 @@
+:root {
+  background-color: #d5e1df;
+}
+.text-center {
+  text-align: center;
+}
+body { font-family: Helvetica, Geneva, Times, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  
+}
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.container {
+  width: 100%;
+  margin: 3rem auto 0 auto;
+}

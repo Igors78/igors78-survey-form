@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body>
+  <div id="container">
+    <h1 id="title"
+        class="text-center">
+      Company's survey form
+    </h1>  
+    <p id="description"
+      class="text-center">
+      <em>Please take part in our good Company's employee survey</em>
+        
+      </p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label"
+              for="name"><strong>Name</strong><br>
+              
+              </label>
+        <input type="text"
+              placeholder="Enter your name"
+              required
+              id="name"
+              name="name"
+              class="form-control"
+              />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">
+          <strong>E-mail</strong><br></label>
+        <input type="email"
+              id="email"
+              class="form-control"
+              name="email"
+              placeholder="Enter your e-mail"
+              required/>
+      </div>
+  <div class="form-group">
+  <label id="number-label" for="number">
+    <strong>Your Age</strong><br></label>
+  <input type="number"
+          id="number"
+          class="form-control"
+          name="age"
+          min="18"
+          max="99"
+          placeholder="Your Age is"
+          required />
+      </div>
+      <div class="form-group">
+        <label id="stage-label"
+              for="stage">
+          <strong>Time at the Company (Years)</strong><br>
+          <input type="number"
+                id="stage"
+                name="stage"
+                class="form-control"
+                min="1"
+                max="50"
+                placeholder="Years within Company"
+                required/>
+          </div>
+        <div class="form-group">
+          <label id="position-label" for="dropdown">
+            <strong> Which position are you on within the Company?</strong></label><br>
+          <select id="dropdown"
+                  name="position"
+                  class="form-control"
+                  required>
+            <option disabled selected value>Select your current position</option>
+            <option value="labourer">Labourer</option>
+            <option value="cleric">Cleric</option>
+            <option value="cleaner">Cleaner</option>
+            <option value="manager">Manager</option>
+            <option value="apprentice">Apprentice</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            <strong>Would you recommend our Company to your friends ?</strong>
+          </p>
+          <input type="radio"
+                name="recommend"
+                id="definitely"
+                class="input-radio"
+                value="definitely"
+                checked/>
+          <label for="definitely">Definitely</label><br>
+          <input type="radio"
+                name="recommend"
+                id="maybe"
+                value="maybe"
+                class="input-radio"/>
+          <label for="maybe">Maybe</label><br>
+          <input type="radio"
+                name="recommend"
+                id="not-sure"
+                value="not-sure"
+                class="input-radio"/>
+          <label for="not-sure">Not sure</label><br>
+          
+        </div>
+        <div class="form-group">
+          <p><strong>What do you like in the company? (Check all that apply)</strong></p>
+        <label> <input type="checkbox"
+                        name="like"
+                        value="work-life-balance"
+                        class="input-checkbox"/>Work-Life Balance
+          </label><br>
+          <label><input type="checkbox"
+                        name="like"
+                        value="salary"
+                        class="input-checkbox"/>Salary</label><br>
+          <label><input type="checkbox"
+                        name="like"
+                        value="colleagues"
+                        class="input-checkbox"/>Colleagues</label><br>
+          <label><input type="checkbox"
+                        name="like"
+                        value="environment"
+                        class="input-checkbox"/>Environment</label><br>
+          <label><input type="checkbox"
+                        name="like"
+                        value="canteen"
+                        class="input-checkbox"/>Canteen</label><br>
+          <label><input type="checkbox"
+                        name="like"
+                        value="location"
+                        class="input-checkbox"/>Location</label><br>
+          <label><input type="checkbox"
+                        name="like"
+                        value="development"
+                        class="input-checkbox"/>Development</label><br>
+          <label><input type="checkbox"
+                        name="like"
+                        value="management"
+                        class="input-checkbox"/>Management</label><br>
+        </div>
+        <div class="form-group">
+          <label id="comments" for="comments"><strong>Any comments or suggestions?</strong></label><br>
+          <textarea id="comments"
+                    class="input-textarea"
+                    name="comments"
+                    placeholder="Enter your comments here...">
+          </textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit"
+                  id="submit"
+                  value="submit"
+                  class="submit-button">Submit</button>
+        </div>
+        </form>
+      </div>
+    </body>
+</html>
