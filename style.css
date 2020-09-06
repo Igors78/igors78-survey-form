@@ -44,6 +44,18 @@ p {
   padding: 10px;
 }
 
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .container {
+    width: 100%;
+  }
+}
+
 .stageposition {
   margin: 25px 0 25px 0;
 }
@@ -87,5 +99,21 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   justify-items: center;
+}
+
+@media only screen and (max-width: 570px) {
+  #dropdown {
+    font-size: 10px;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 474px) {
+  #dropdown {
+    font-size: 10px;
+  }
+  .inputtext {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

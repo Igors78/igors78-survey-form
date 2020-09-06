@@ -34,6 +34,13 @@ p {
   display: flexbox;
   justify-content: center;
   width: 60%;
+  @media only screen and (max-width: 960px){
+    width:80%;
+  } ;
+  @media only screen and (max-width: 725px){
+    width:100%;
+  } ;
+  
   margin: 20px auto;
   border: 1px solid black;
   padding: 10px;
@@ -74,3 +81,17 @@ button {
   display: flex;
   justify-items: center;
 }
+@media only screen and (max-width: 570px){
+  #dropdown {
+    font-size: 10px;
+    padding-right: 0;
+  }
+} ;
+@media only screen and (max-width: 474px){
+  #dropdown {
+    font-size: 10px;
+  }
+  .inputtext {
+    font-size: 15px;
+  }
+} ;
